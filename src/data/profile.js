@@ -1,4 +1,4 @@
-export const profile = {
+export const profile = {  
   name: "Dr. Anitha P",
   email: "[Email]",
   role: "APPLIED PSYCHOLOGIST · RESEARCHER · EDUCATOR",
