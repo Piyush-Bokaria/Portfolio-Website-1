@@ -1,4 +1,4 @@
-import "./Footer.css"
+import "./Footer.css";
 import { profile } from "../data/profile";
 
 export default function Footer() {
@@ -15,10 +15,32 @@ export default function Footer() {
           [Local emergency number / verified crisis resource]
         </a>
       </div>
+      <div className="shell footer-top">
+        <div>
+          <a className="wordmark" href="#top">
+            {profile.name}
+          </a>
+          <p>Applied Psychologist · Researcher · Educator</p>
+        </div>
+        <div className="footer-links">
+          <a href="#about">About</a>
+          <a href="#journey">Journey</a>
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Reach out</a>
+        </div>
+        <div className="social-media">
+          <a href="#contact">LinkedIn</a>
+          <a href="#contact">ResearchGate</a>
+          <a href="#contact">Google Scholar</a>
+        </div>
+      </div>
       <div className="foot">
         <span>
           © {new Date().getFullYear()} {profile.name}
         </span>
+        <span>Built with curiosity, grounded in psychology.</span>
         <span>
           <a href="#top">Back to top ↑</a>
         </span>
