@@ -1,0 +1,34 @@
+.crisis {
+  border-left: 2px solid var(--ochre);
+  padding-left: 22px;
+  max-width: 760px;
+}
+.crisis h3 {
+  font-size: 27px;
+}
+.crisis p {
+  color: #dbd5cb;
+}
+.crisis a {
+  font-size: 13px;
+  color: #e6cc9b;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.foot {
+  border-top: 1px solid #5a5751;
+  margin-top: 65px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font: 10px "DM Mono";
+  color: #dbd5cb;
+}
+.foot a {
+  text-decoration: underline;
+}
+footer {
+  background: var(--ink);
+  color: #f7f3ec;
+  padding: 65px 8vw 25px;
+}

@@ -1,0 +1,53 @@
+.contact {
+  background: #e8ddd3;
+  min-height: 800px;
+}
+.contact > div > p:not(.eyebrow) {
+  font-size: 18px;
+}
+.contact-grid {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 40px 0;
+}
+.contact-grid a {
+  font: 26px "DM Serif Display";
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.contact-grid span {
+  font: 11px "DM Mono";
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 850px;
+}
+label {
+  font: 11px "DM Mono";
+  letter-spacing: 0.08em;
+  display: grid;
+  gap: 8px;
+}
+label:last-of-type {
+  grid-column: span 2;
+}
+input,
+textarea {
+  font: 16px "DM Sans";
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  padding: 10px 0;
+  outline-color: var(--terracotta);
+}
+textarea {
+  height: 90px;
+  resize: vertical;
+}
+form button {
+  width: max-content;
+  margin-top: 10px;
+}

@@ -1,0 +1,72 @@
+.split {
+  display: grid;
+  grid-template-columns: 0.83fr 1.17fr;
+  gap: 10vw;
+  align-items: center;
+}
+.about-image {
+  height: 585px;
+  position: relative;
+}
+.about-image img {
+  width: 86%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.72);
+}
+.about-image:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  width: 55%;
+  height: 47%;
+  border: 1px solid var(--terracotta);
+  z-index: -1;
+}
+.about-image span {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  font: 28px "Nanum Pen Script";
+  color: var(--terracotta);
+  max-width: 150px;
+  line-height: 1.1;
+}
+.about-copy > p {
+  font-size: 18px;
+}
+.about blockquote,
+.testimonials blockquote {
+  font: 32px/1.22 "DM Serif Display";
+  margin: 45px 0 0;
+  max-width: 550px;
+  color: var(--forest);
+}
+cite {
+  font: 10px "DM Mono";
+  letter-spacing: 0.08em;
+  font-style: normal;
+  display: block;
+  margin-top: 18px;
+  color: var(--ink);
+}
+.areas {
+  padding-top: 0;
+}
+.areas > div {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.areas span {
+  padding: 20px 10px;
+  border-bottom: 1px solid var(--line);
+  font: 22px "DM Serif Display";
+}
+.areas b {
+  font: 10px "DM Mono";
+  vertical-align: middle;
+  color: var(--terracotta);
+  margin-right: 14px;
+}

@@ -1,0 +1,51 @@
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 12px;
+}
+nav > a:not(.nav-cta) {
+  position: relative;
+}
+nav > a:not(.nav-cta):after,
+.text-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: -4px;
+  left: 0;
+  border-bottom: 1px solid currentColor;
+  transition: 0.3s;
+}
+.text-link {
+  position: relative;
+}
+.text-link:hover:after,
+nav > a:hover:after {
+  width: 100%;
+}
+.nav-cta,
+.button {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 11px 17px;
+  font-size: 12px;
+  border: 0;
+  cursor: pointer;
+}
+.nav-cta span {
+  color: var(--ochre);
+}
+.menu {
+  display: none;
+  background: 0;
+  border: 0;
+  font: inherit;
+}
+.brand {
+  font-family: "DM Serif Display";
+  font-size: 25px;
+}
+.brand i {
+  color: var(--terracotta);
+}

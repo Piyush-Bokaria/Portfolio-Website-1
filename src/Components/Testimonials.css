@@ -1,0 +1,66 @@
+.testimonials {
+  text-align: center;
+  min-height: 550px;
+  display: grid;
+  place-items: center;
+}
+.testimonials h2 {
+  max-width: 850px;
+}
+.testimonials blockquote {
+  margin: 50px auto 15px;
+  font-size: 37px;
+}
+.placeholder {
+  font-size: 11px;
+  color: #625f58;
+  margin: auto;
+}
+.pause {
+  background: #485548;
+  color: #f7f3ec;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  min-height: 720px;
+}
+.pause .eyebrow {
+  color: #e6cc9b;
+}
+.pause h2 em {
+  color: #e6cc9b;
+}
+.pause > div > p {
+  margin: 18px auto;
+}
+.orb {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 1px solid #e6cc9b;
+  background: transparent;
+  color: #f7f3ec;
+  margin: 25px;
+  border: none;
+  outline: 1px solid #e6cc9b;
+  outline-offset: 8px;
+  cursor: pointer;
+  transition: 4s ease;
+}
+.orb.active {
+  transform: scale(1.25);
+  background: rgba(230, 204, 155, 0.12);
+}
+.orb span {
+  font: 18px "DM Serif Display";
+}
+.orb small {
+  display: block;
+  font: 9px "DM Mono";
+  letter-spacing: 0.1em;
+  margin-top: 7px;
+}
+.quiet {
+  font: 27px "Nanum Pen Script" !important;
+  color: #e6cc9b;
+}

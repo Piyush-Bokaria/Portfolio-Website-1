@@ -1,0 +1,254 @@
+.journey {
+  padding: 130px 0;
+  background-color: var(--forest);
+  color: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+
+/* .journey .eyebrow {
+  color: #e6cc9b;
+}
+.journey h2 em {
+  color: #d7a991;
+}
+.journey-list {
+  margin-top: 65px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+.journey-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px;
+  gap: 30px;
+  padding: 38px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.journey-item .index,
+.year {
+  font: 11px "DM Mono";
+  color: #e6cc9b;
+}
+.journey-item h3 {
+  font-size: 31px;
+}
+.journey-item p:last-child {
+  margin: 9px 0 0;
+  color: #e9e6dd;
+  max-width: 500px;
+} */
+
+.journey-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8vw;
+}
+.journey-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.journey-title {
+  font-family: "DM Serif Display";
+  font-size: clamp(42px, 5vw, 70px);
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+.journey-subtitle {
+  font-family: "DM Serif Display";
+  font-size: 24px;
+  font-style: italic;
+  color: var(--sage);
+  margin: 0 auto;
+}
+.journey-stages {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.journey-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--line) 5%,
+    var(--line) 95%,
+    transparent 100%
+  );
+  transform: translateX(-50%);
+}
+.journey-stage {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  align-items: start;
+  margin-bottom: 70px;
+  position: relative;
+}
+.journey-stage:last-child {
+  margin-bottom: 0;
+}
+.journey-stage:nth-child(even) .journey-stage-content {
+  grid-column: 3;
+  text-align: left;
+}
+.journey-stage:nth-child(even) .journey-stage-year-side {
+  grid-column: 1;
+  text-align: right;
+}
+.journey-stage:nth-child(odd) .journey-stage-content {
+  grid-column: 1;
+  text-align: right;
+}
+.journey-stage:nth-child(odd) .journey-stage-year-side {
+  grid-column: 3;
+  text-align: left;
+}
+.journey-stage-dot-col {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+.journey-stage-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--terracotta);
+  border-radius: 50%;
+  background-color: var(--paper);
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.journey-stage-label {
+  font-family: "DM Sans";
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin: 0 0 10px;
+}
+.journey-stage-title {
+  font-family: "DM Serif Display";
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 16px;
+  font-style: italic;
+  line-height: 1.35;
+}
+.journey-stage-description {
+  font-family: "DM Sans";
+  font-size: 15px;
+  line-height: 1.8;
+  color: #f7f3ec;
+  max-width: 380px;
+  margin: 0;
+}
+.journey-stage:nth-child(odd) .journey-stage-description {
+  margin-left: auto;
+}
+.journey-stage-year {
+  font-family: "DM Serif Display";
+  font-size: 19px;
+  color: #8b867d;
+  font-style: italic;
+  padding-top: 4px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .journey {
+    padding: 80px 0;
+  }
+  .journey-inner {
+    padding: 0 6vw;
+  }
+  .journey-header {
+    margin-bottom: 55px;
+  }
+  .journey-title {
+    font-size: 48px;
+  }
+  .journey-subtitle {
+    font-size: 20px;
+  }
+  .journey-line {
+    left: 20px;
+  }
+  .journey-stage {
+    grid-template-columns: 40px 1fr;
+    gap: 0;
+    margin-bottom: 55px;
+  }
+  .journey-stage-dot-col {
+    grid-column: 1;
+    justify-content: flex-start;
+    padding-left: 14px;
+  }
+  .journey-stage:nth-child(odd) .journey-stage-content,
+  .journey-stage:nth-child(even) .journey-stage-content {
+    grid-column: 2;
+    text-align: left;
+    padding-left: 25px;
+  }
+  .journey-stage:nth-child(odd) .journey-stage-description {
+    margin-left: 0;
+  }
+  .journey-stage-year-mobile {
+    display: block;
+  }
+  .journey-stage-title {
+    font-size: 26px;
+  }
+  .journey-stage-description {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  .journey-stage-year-mobile {
+    display: none;
+  }
+}
+
+.human {
+  text-align: center;
+  background: #b97860;
+  color: #fff8ed;
+  overflow: hidden;
+}
+.human .eyebrow {
+  color: #fff8ed;
+}
+.human h2 em {
+  color: #4a5347;
+}
+.phrases {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+.phrases i {
+  font: 23px "DM Serif Display";
+  font-style: normal;
+  border: 1px solid rgba(255, 248, 237, 0.45);
+  padding: 12px 19px;
+  border-radius: 50%;
+}
+.human > div > p:last-child {
+  font: 27px "Nanum Pen Script";
+  margin: auto;
+}
+.eyebrow {
+  font: 500 10px "DM Mono";
+  letter-spacing: 0.14em;
+  color: var(--forest);
+  margin: 0 0 20px;
+}
